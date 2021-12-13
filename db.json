@@ -1,0 +1,29 @@
+{
+    "products" : 
+[
+    {
+      "id": 0,
+      "name": "Uzun şişme mont",
+      "price": "1.550,00 TL",
+      "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Koleksiyon/TW6210012018002.JPG"
+    },
+    {
+        "id": 1,
+        "name": "Şapka",
+        "price": "299,00 TL",
+        "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Stillife/TW6210077018022.JPG"
+      },
+      {
+        "id": 2,
+        "name": "Çanta",
+        "price": "399,00 TL",
+        "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Stillife/TW6210052098070.JPG"
+      },
+      {
+        "id": 3,
+        "name": "PELUŞ JOGGER PANTOLON",
+        "price": "559,00 TL",
+        "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Koleksiyon/TW6210028010001.JPG"
+      }
+  ]
+}
