@@ -770,7 +770,9 @@
         "
         id="plhAramaHeader"
       >
-        <span>ARA</span>
+      <router-link to="/UserPage">
+        <span>GİRİŞ YAP</span>
+      </router-link>
       </div>
 
       <div class="mini-search-sub absolute transition">
@@ -901,8 +903,8 @@
             class="mini-user-info header-height display-flex align-items-center"
             id="plhUyeGirisHeader"
           >
-          <router-link to="/UserPage">
-            <span>ÜYELİK</span>
+          <router-link to="/UserPageKayit">
+            <span>ÜYE OL</span>
           </router-link>
           </div>
         </div>
@@ -923,6 +925,7 @@
     </div>
   </div>
       </div>
+
 
       <div>
     <div class="ga7">

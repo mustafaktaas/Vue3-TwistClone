@@ -6,6 +6,7 @@ import ShopByLook from '../views/ShopByLook.vue'
 import TwistZone from '../views/TwistZone.vue'
 import Outlet from '../views/Products/Outlet.vue'
 import UserPage from '../views/User/UserPage.vue'
+import UserPageKayit from '../views/User/UserPageKayit.vue'
 import UrunSayfasi from '../views/Urun/UrunSayfasi.vue'
 
 const routes = [
@@ -43,6 +44,11 @@ const routes = [
     path: '/UserPage',
     name: 'UserPage',
     component : UserPage
+  },
+  {
+    path: '/UserPageKayit',
+    name: 'UserPageKayit',
+    component : UserPageKayit
   },
   {
     path: '/UrunSayfasi',

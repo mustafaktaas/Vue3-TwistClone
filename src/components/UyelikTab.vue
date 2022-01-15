@@ -11,10 +11,7 @@
                 <div class="ems-tab-header display-flex">
                   <div rel="tab-1" class="selected">
                     <span><a href="javascript:void(0);">Üye Girişi</a></span>
-                  </div>
-                  <div rel="tab-2" class="">
-                    <span><a href="javascript:void(0);">Yeni Üyelik</a></span>
-                  </div>
+                  </div> 
                 </div>
 
                 <div class="ems-tab-content">
@@ -139,6 +136,13 @@
                       </div>
                     </div>
                   </div>
+
+                      <div class="ems-tab-header display-flex">
+                <div rel="tab-2" class="">
+                    <span><a href="javascript:void(0);">Yeni Üyelik</a></span>
+                  </div>
+                 </div>
+                 
 
                   <div rel="tab-2" class="ems-signup" id="validateYeniUyelik">
                     <div class="form">

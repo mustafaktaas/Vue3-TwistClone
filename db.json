@@ -3,27 +3,59 @@
 [
     {
       "id": 0,
-      "name": "Uzun şişme mont",
+      "name": "UZUN ŞİŞME MONT",
       "price": "1.550,00 TL",
+      "durumu": "YENİ",
       "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Koleksiyon/TW6210012018002.JPG"
     },
     {
         "id": 1,
-        "name": "Şapka",
+        "name": "ŞAPKA",
         "price": "299,00 TL",
+        "durumu": "YENİ",
         "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Stillife/TW6210077018022.JPG"
       },
       {
         "id": 2,
-        "name": "Çanta",
+        "name": "ÇANTA",
         "price": "399,00 TL",
+        "durumu": "YENİ",
         "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Stillife/TW6210052098070.JPG"
       },
       {
         "id": 3,
         "name": "PELUŞ JOGGER PANTOLON",
         "price": "559,00 TL",
+        "durumu": "YENİ",
         "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Koleksiyon/TW6210028010001.JPG"
+      },
+      {
+        "id": 4,
+        "name": "JEAN ŞORT MİX TÜL ETEK",
+        "price": "559,00 TL",
+        "durumu": "YENİ",
+        "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Koleksiyon/TW6210004051001.jpg"
+      },
+      {
+        "id": 5,
+        "name": "DANTEL MIX TSHIRT ELBISE",
+        "price": "699,00 TL",
+        "durumu": "YENİ",
+        "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Koleksiyon/TW6210002105001.jpg"
+      },
+      {
+        "id": 6,
+        "name": "MINI ETEK",
+        "price": "499,00 TL",
+        "durumu": "YENİ",
+        "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Koleksiyon/TW6210004058015.jpg"
+      },
+      {
+        "id": 7,
+        "name": "CULOTTE FIT PANTOLON",
+        "price": "599,00 TL",
+        "durumu": "YENİ",
+        "img" : "https://img2-twist.mncdn.com/mnresize/800/-//Twist/products/FW2122/Koleksiyon/TW6210003017089.jpg"
       }
   ]
 }

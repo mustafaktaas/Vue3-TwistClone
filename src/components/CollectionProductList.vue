@@ -1,6 +1,6 @@
 <template>
     
-       <li v-for="product in products" :key="product.id"
+   <li v-for="product in products" :key="product.id"
                   data-category-name="Mont"
                   data-product-id="10347"
                   data-product-code="TW6210012018002"
@@ -51,11 +51,7 @@
                       <div class="prd-name">
                        {{product.name}}
 
-                      <div class="prd-badge">
-                                
-                                        <div class="ems-prd-badge1 urunListe_yeniUrun"><span>{{product.durumu}}</span></div>
-                                
-                                </div>
+                      
                         
                       </div>
 
