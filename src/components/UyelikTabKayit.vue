@@ -27,18 +27,8 @@
                      
     <form class="ems-form" id="signup" action="/tr/CreateMember" method="post">
         <div class="row g-20">
-            <div class="ems-field label-anim is-completed">
-                <label class="form-label" for="Name">* Adınız</label>
-                <input class="form-control
-                                  ems-styler-activeted
-                                  act-iStyler" id="Name" name="Name" type="text" value="">
-                <div class="ems-field-feedback"></div>
-            </div>
-            <div class="ems-field label-anim is-completed">
-                <label class="form-label" for="Surname">* Soyadınız</label>
-                <input class="form-control ems-styler-activeted act-iStyler" id="Surname" type="text" name="Surname" value="">
-                <div class="ems-field-feedback"></div>
-            </div>
+           
+          
             <div class="ems-field label-anim is-completed">
                 <label class="form-label" for="Email">E-Mail</label>
                 <input class="form-control to-lower-case ems-styler-activeted act-iStyler" id="Email" name="Email" type="text" value="">
@@ -49,22 +39,9 @@
                 <input class="form-control ems-styler-activeted act-iStyler" id="Password" name="Password" type="password">
                 <div class="ems-field-feedback"></div>
             </div>
-            <div class="ems-field label-anim is-completed">
-                <label class="form-label" for="PasswordCheck">Şifre Tekrar</label>
-                <input class="form-control ems-styler-activeted act-iStyler" id="PasswordCheck" name="PasswordCheck" type="password">
-                <div class="ems-field-feedback"></div>
-            </div>
-            <div class="ems-field label-anim is-completed">
-                <label class="form-label" for="MobilePhone">Telefon Numarası</label>
-                <input class="form-control ems-styler-activeted act-iStyler" id="MobilePhone" name="MobilePhone" type="text" value="">
-                <div class="ems-field-feedback"></div>
-            </div>
-        
            
-            
-            
             <div class="ems-field">
-                <button type="submit" class="btn btn-clr1 btnDefault"><span>Bilgilerimi Kaydet</span></button>
+                <button type="submit" class="btn btn-clr1 btnDefault"><span>ÜYE OL</span></button>
             </div>
             <input name="__RequestVerificationToken" type="hidden" value="" class="ems-styler-activeted act-iStyler">
             <input id="returnUrl" name="returnUrl" type="hidden" value="/tr/Widget/Get/CreateUserRaw" class="ems-styler-activeted act-iStyler">

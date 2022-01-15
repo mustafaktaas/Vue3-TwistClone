@@ -70,34 +70,8 @@
                                   justify-between
                                 "
                               >
-                                <div class="form-check">
-                                  <span
-                                    class="sStylerMainWrp sStylerWrp_checkbox"
-                                    ><span class="cStyler"
-                                      ><img
-                                        class="icon-checkbox"
-                                        src="https://img2-twist.mncdn.com/Twist/frontend/icons/checkbox.svg" /><img
-                                        class="icon-checkbox-active"
-                                        src="https://img2-twist.mncdn.com/Twist/frontend/icons/checkbox-active.svg" /></span
-                                    ><input
-                                      class="
-                                        form-check-input
-                                        ems-styler-activeted
-                                        act-iStyler
-                                        sCheckbox
-                                      "
-                                      id="RememberMe"
-                                      type="checkbox"
-                                      name="RememberMe"
-                                      value="true"
-                                  /></span>
-                                  <label
-                                    class="form-check-label"
-                                    for="RememberMe"
-                                    >Beni Hatırla</label
-                                  >
-                                </div>
-                                <a href="/sifremi-unuttum">Şifremi Unuttum?</a>
+                                
+                            
                               </div>
                             </div>
 
