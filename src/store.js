@@ -3,17 +3,17 @@ import Api from "./services/api";
 
 const store = createStore({
   state:{
-    products: []
+    courses: []
   },
   mutations:{
-    SET_PRODUCTS(state,products){
-      state.products = products;
+    SET_COURSES(state,courses){
+      state.courses = courses;
     }
   },
   actions:{
-    async loadProducts({commit}){
+    async loadCourses({commit}){
       let response = await Api().get('');
-      commit('SET_PRODUCTS',response.data);
+      commit('SET_COURSES',response.data);
     }
   }
 });

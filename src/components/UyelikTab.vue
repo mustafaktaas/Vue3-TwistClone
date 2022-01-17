@@ -23,6 +23,7 @@
                     <div class="form">
                       <div class="form-inner login-form-container">
                         <form
+                        @submit.prevent="Login"
                           class="ems-form"
                           id="login"
                           method="post"
@@ -34,6 +35,7 @@
                                 >E-Mail</label
                               >
                               <input
+                              v-model="email"
                                 class="
                                   form-control
                                   ems-styler-activeted
@@ -42,7 +44,7 @@
                                 id="UserNameOrEmail"
                                 type="text"
                                 name="UserNameOrEmail"
-                                value=""
+                               
                               />
                               <div class="ems-field-feedback"></div>
                             </div>
@@ -51,6 +53,7 @@
                                 >Şifre</label
                               >
                               <input
+                              v-model="password"
                                 class="
                                   form-control
                                   ems-styler-activeted
@@ -141,7 +144,7 @@
                                 id="Name"
                                 name="Name"
                                 type="text"
-                                value=""
+                                
                               />
                               <div class="ems-field-feedback"></div>
                             </div>
@@ -633,3 +636,29 @@
   </main>
 </template>
 
+<script>
+import firebase from "firebase/compat";
+import { ref } from "vue";
+
+export default {
+  setup() {
+    const email = ref("");
+    const password = ref("");
+
+    const Login = () => {
+      firebase
+        .auth()
+        .signInWithEmailAndPassword(email.value, password.value)
+        .then((user) => {
+          alert(user);
+        })
+        .catch((err) => alert(err.message));
+    };
+    return {
+      Login,
+      email,
+      password,
+    };
+  },
+};
+</script>

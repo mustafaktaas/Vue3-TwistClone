@@ -28,15 +28,32 @@
     <form class="ems-form" id="signup" action="/tr/CreateMember" method="post">
         <div class="row g-20">
            
-          
+    
+                            <div class="ems-field label-anim">
+                              <label class="form-label" for="Name"
+                                >* Adınız</label
+                              >
+                              <input
+                                class="
+                                  form-control
+                                  ems-styler-activeted
+                                  act-iStyler
+                                "
+                                id="Name"
+                                name="Name"
+                                type="text"
+                                v-model="fullname"
+                              />
+                              <div class="ems-field-feedback"></div>
+                            </div>
             <div class="ems-field label-anim is-completed">
                 <label class="form-label" for="Email">E-Mail</label>
-                <input class="form-control to-lower-case ems-styler-activeted act-iStyler" id="Email" name="Email" type="text" value="">
+                <input  v-model="email" class="form-control to-lower-case ems-styler-activeted act-iStyler" id="Email" name="Email" type="text" >
                 <div class="ems-field-feedback"></div>
             </div>
             <div class="ems-field label-anim is-completed">
                 <label class="form-label" for="Password">Şifre</label>
-                <input class="form-control ems-styler-activeted act-iStyler" id="Password" name="Password" type="password">
+                <input v-model="password" class="form-control ems-styler-activeted act-iStyler" id="Password" name="Password" type="password">
                 <div class="ems-field-feedback"></div>
             </div>
            
@@ -147,3 +164,32 @@
     </main>
 
 </template>
+
+<script>
+import firebase from "firebase/compat";
+import { ref } from "vue";
+
+export default {
+  setup() {
+    const fullname = ref("");
+    const email = ref("");
+    const password = ref("");
+
+    const Register = () => {
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(email.value, password.value)
+        .then((user) => {
+          alert(user);
+        })
+        .catch((err) => alert(err.message));
+    };
+    return {
+      Register,
+      fullname,
+      email,
+      password,
+    };
+  },
+};
+</script>

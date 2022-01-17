@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createApp , onUnmounted, ref} from "vue";
 import App from './App.vue'
 
 import './assets/styles/207.css'
@@ -7,6 +7,42 @@ import './assets/styles/segmentify.css'
 import './assets/styles/styles.css'
 import router from './router'
 import store from "./store";
+import firebase from "firebase/compat/app";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBQ2RuMLHjWCQI057yitriYQIfnufyPk1g",
+  authDomain: "vue3-twist-ad32f.firebaseapp.com",
+  projectId: "vue3-twist-ad32f",
+  storageBucket: "vue3-twist-ad32f.appspot.com",
+  messagingSenderId: "757715016969",
+  appId: "1:757715016969:web:181f89b080b1ca8757c7d8",
+  };
+  
+  const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+  export const db = firebaseApp.firestore();
+const coursesCollection = db.collection("courses");
+
+export const createCourse = (course) => {
+  return coursesCollection.add(course);
+};
+
+export const getCourse = async (id) => {
+  const course = await coursesCollection.doc(id).get();
+  return course.exists ? course.data() : null;
+};
+
+export const useLoadCourses = () => {
+  const courses = ref([]);
+  const close = coursesCollection.onSnapshot((snapshot) => {
+    courses.value = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+  });
+  onUnmounted(close);
+  return courses;
+};
 
 const app = createApp(App);
 app.use(router);
