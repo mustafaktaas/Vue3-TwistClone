@@ -73,14 +73,11 @@
 </template>
 
 <script>
-
+import { useLoadproducts } from "../main";
 export default {
-  mounted(){
-    this.$store.dispatch('loadProducts');
+  setup() {
+    const products = useLoadproducts();
+    return { products };
   },
-  computed:{
-    products() {return this.$store.state.products}
-  }
 };
-
 </script>

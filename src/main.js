@@ -21,27 +21,27 @@ const firebaseConfig = {
   const firebaseApp = firebase.initializeApp(firebaseConfig);
 
   export const db = firebaseApp.firestore();
-const coursesCollection = db.collection("courses");
+const productsCollection = db.collection("products");
 
-export const createCourse = (course) => {
-  return coursesCollection.add(course);
+export const createproduct = (product) => {
+  return productsCollection.add(product);
 };
 
-export const getCourse = async (id) => {
-  const course = await coursesCollection.doc(id).get();
-  return course.exists ? course.data() : null;
+export const getproduct = async (id) => {
+  const product = await productsCollection.doc(id).get();
+  return product.exists ? product.data() : null;
 };
 
-export const useLoadCourses = () => {
-  const courses = ref([]);
-  const close = coursesCollection.onSnapshot((snapshot) => {
-    courses.value = snapshot.docs.map((doc) => ({
+export const useLoadproducts = () => {
+  const products = ref([]);
+  const close = productsCollection.onSnapshot((snapshot) => {
+    products.value = snapshot.docs.map((doc) => ({
       id: doc.id,
       ...doc.data(),
     }));
   });
   onUnmounted(close);
-  return courses;
+  return products;
 };
 
 const app = createApp(App);
