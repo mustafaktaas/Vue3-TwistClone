@@ -1,5 +1,14 @@
 <template>
   <main class="site-main">
+     <button id="modalbtn" @click="showModal = true" class="button" outlined></button>
+    <a v-if="isLoggedin" id="profile">my profile</a>
+    <transition name="fade" appear>
+      <div
+        class="modal-overlay"
+        v-if="showModal"
+        @click="showModal = false"
+      ></div>
+    </transition>
     <div class="page page-login">
       <div class="page-login-grid display-grid">
         <div class="ga1 sortable">
@@ -506,6 +515,13 @@ import firebase from "firebase/compat";
 import { ref } from "vue";
 
 export default {
+   props: ["onClose"],
+   data() {
+    return {
+      isLoggedin: false,
+      showModal: false,
+    };
+  },
   setup() {
     const fullname = ref("");
     const twoname = ref("");

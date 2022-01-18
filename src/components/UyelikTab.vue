@@ -1,5 +1,6 @@
 <template>
   <main class="site-main">
+     <button id="jest" @click="onClose" />
     <div class="page page-login">
       <div class="page-login-grid display-grid">
         <div class="ga1 sortable">
@@ -641,6 +642,13 @@ import firebase from "firebase/compat";
 import { ref } from "vue";
 
 export default {
+  props: ["onClose"],
+   data() {
+    return {
+      isLoggedin: false,
+      showModal: false,
+    };
+  },
   setup() {
     const email = ref("");
     const password = ref("");
@@ -662,3 +670,4 @@ export default {
   },
 };
 </script>
+
