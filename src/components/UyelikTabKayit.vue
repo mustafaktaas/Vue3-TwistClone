@@ -25,7 +25,7 @@
                   <div class="form-inner signup-form-container">
                   
                      
-    <form class="ems-form" id="signup" action="/tr/CreateMember" method="post">
+    <form class="ems-form" id="signup" action="/tr/CreateMember" method="post"  @submit.prevent="Register">
         <div class="row g-20">
            
     
