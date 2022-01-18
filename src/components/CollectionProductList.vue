@@ -69,14 +69,27 @@
 </template>
 
 <script>
-
+import gql from "graphql-tag";
+const GET_PRODUCTS = gql`
+  query getProducts {
+    products {
+      id
+      name
+      price
+      img
+    }
+  }
+`;
 export default {
-  mounted(){
-    this.$store.dispatch('loadProducts');
+  data() {
+    return {
+      products: []
+    };
   },
-  computed:{
-    products() {return this.$store.state.products}
+  apollo: {
+    products: {
+      query: GET_PRODUCTS
+    }
   }
 };
-
 </script>
