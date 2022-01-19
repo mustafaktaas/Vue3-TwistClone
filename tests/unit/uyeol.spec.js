@@ -3,7 +3,7 @@ import UyeOl from "@/components/UyelikTabKayit.vue"
 
 
 describe('UyelikTabKayit.vue', () => {
-    it('renders profile link', () => {
+    it('Profil linki oluşturulur', () => {
         const wrapper = mount(UyeOl, {
             data() {
                 return {
@@ -16,7 +16,7 @@ describe('UyelikTabKayit.vue', () => {
     });
 
 
-    it('should not renders profile link', () => {
+    it('Profil linki oluşturulmamalıdır', () => {
         const wrapper = mount(UyeOl, {
             data() {
                 return {

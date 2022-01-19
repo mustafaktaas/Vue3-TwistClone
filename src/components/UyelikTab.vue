@@ -1,6 +1,5 @@
 <template>
   <main class="site-main">
-     <button id="jest" @click="onClose" />
     <div class="page page-login">
       <div class="page-login-grid display-grid">
         <div class="ga1 sortable">
@@ -90,6 +89,8 @@
                                 <button
                                   type="submit"
                                   class="btn btn-clr1 btnDefault"
+                                  id="jest" 
+                                  @click="onClose" 
                                 >
                                   <span>GİRİŞ YAP</span>
                                 </button>

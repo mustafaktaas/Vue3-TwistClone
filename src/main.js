@@ -15,19 +15,15 @@ import {
 } from "@apollo/client/core";
 import { createApolloProvider } from "@vue/apollo-option";
 
-// HTTP connection to the API
 const httpLink = createHttpLink({
-  // You should use an absolute URL here
   uri: "https://vue3twist.hasura.app/v1/graphql",
   headers: {
     'x-hasura-admin-secret': 'WNBEbuZgT0hsYopmNcuvkFTUSRhrndb0KCY3kKO5i4QByRXCJ5aJX3HmN78Il2RH'
   }
 });
 
-// Cache implementation
 const cache = new InMemoryCache();
 
-// Create the apollo client
 const apolloClient = new ApolloClient({
   link: httpLink,
   cache,

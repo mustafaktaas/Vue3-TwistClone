@@ -461,14 +461,7 @@
               </a>
             </li>
             <li class="sub-items" style="order: 4">
-              <router-link
-                target="_self"
-                class="header-height relative align-items-center display-flex"
-                to="/Outlet"
-                rel=" "
-                >Outlet
-              </router-link>
-
+            
               <div class="sub absolute transition animated fadeIn faster">
                 <ul class="lvl-2 columnCount3">
                   <li class="showSubLVL sub-items" style="order: 0">
