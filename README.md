@@ -1,5 +1,7 @@
 # vue-twistvue3
 
+I made a clone of https://www.twist.com.tr/ using the Vue framework. I made this work for my Web Programming class.
+
 ## Project setup
 ```
 npm install
